@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Dynamic dependency injections: Part-I
+    </title>
+    <script type="text/javascript" src="angular.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="constants/Configuration.js"></script>
+    <script type="text/javascript" src="components/intializer.js"></script>
+    <script type="text/javascript" src="constants/pharos/ServiceConfigurer.js"></script>
+    <script type="text/javascript" src="controllers/AssetPropertyController.js"></script>
+
+    <!--Main Module : Services-->
+    <script type="text/javascript" src="services/PorticoServices/DeviceDataSerService.js"></script>
+    <script type="text/javascript" src="services/PharosServices/DeviceDataSerService.js"></script>
+    <script type="text/javascript" src="services/commonServices/DeviceDataSerService.js"></script>
+</head>
+
+<body ng-app="app">
+
+<div ng-controller="AssetPropertyController">
+    <input type="text" ng-model="nameAt">
+</div>
+</body>
+</html>
